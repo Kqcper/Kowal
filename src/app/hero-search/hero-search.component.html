@@ -1,0 +1,18 @@
+<div id="search-component">
+  <label for="search-box">Wyszukaj bochaterów</label>
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+
+  <ul class="search-result">
+    <li *ngFor="let hero of heroes$ | async" >
+      <a routerLink="/detail/{{hero.id}}">
+        {{hero.name}}
+      </a>
+    </li>
+  </ul>
+<div >
+<img src="https://dyn1.heritagestatic.com/lf?set=path[1%2F3%2F5%2F2%2F1352838]&call=url[file:product.chain]" width="100px" lenght="100px" alt="Tu miało być zdj">
+<img src="https://th.bing.com/th/id/OIP.E-VezKEqz5OcG7Mx0QeGtwHaHa?rs=1&pid=ImgDetMain" width="140px" lenght="100px" alt="Tu miało być zdj">
+<img src="https://www.partybox.pl/zasoby/images/middle/kostium_dzieciecy_superbohater_11_13_lat_42875.jpg" width="100px" lenght="100px" alt="Tu miało być zdj">
+<img src="https://th.bing.com/th/id/OIP.7lsd7zL-fFOavz_467ElsAAAAA?rs=1&pid=ImgDetMain" width="190px" lenght="100px" alt="Tu miało być zdj">
+</div>
+</div>
